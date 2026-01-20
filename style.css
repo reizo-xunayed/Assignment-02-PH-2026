@@ -31,20 +31,37 @@ body {
         #F7E93F 0%, 
         #FB09B4 51%, 
         #9100F8 100% );
+     background-size: 200% 100%;
+    background-position: 0% 50%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
+    animation:gradient-slide 1s linear infinite alternate;
 }
+@keyframes gradient-slide {
+    from {
+        background-position: 0% 50%;
+    }
+    to {
+        background-position: 100% 50%;
+    }
+}
+
+
 
 .navbar a{
     text-decoration: none;
     color: aliceblue;
     padding: 10px;
 }
+.navbar a:hover{
+    color:#c172f9;
+}
 .Subscribe-button a{
     text-decoration: none;
     color: aliceblue;
+    display: inline-block;
     background: linear-gradient(
         90deg, 
         #F7E93F 0%, 
@@ -52,9 +69,12 @@ body {
         #9100F8 100%);
     padding: 6px 12px;
     border-radius: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-
+.Subscribe-button a:hover{
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+}
 .hero-bg {
     position: absolute;
     top: 0;
@@ -81,16 +101,13 @@ body {
     position: relative;
     z-index: 1;
 }
-.circle {
-    position: relative; 
-    width: 150px; 
-    height: 150px;
-}
 
 .hero-circle {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    position: relative;
+    z-index: 1;
 }
 
 .microphone {
@@ -100,6 +117,7 @@ body {
     transform: translate(-50%, -50%); 
     width: 120px; 
     height: 200px;
+    z-index: 2;
 }
 
 
@@ -279,6 +297,13 @@ body {
 }
 .youtube-banner{
     height: 50%;
+    position: relative;
+}
+.youtube-banner iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
 }
 .card-contents{
     color: #fff;
