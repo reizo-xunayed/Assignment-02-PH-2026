@@ -533,6 +533,11 @@ body {
         width: 80px;
         height: auto;
     }
+    .new-button{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
     .hero-text h1 { font-size: 32px; margin-bottom: 15px; }
     .hero-text p { font-size: 16px; margin-bottom: 20px; }
     .hero-buttons {
