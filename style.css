@@ -350,7 +350,6 @@ body {
     justify-content: center;
 }
 .youtube-cards{
-    height: 1270px;
     width: 100%;
     background-color: #230E3D;
     margin-top: 0;
@@ -573,8 +572,16 @@ body {
     }
     .card { width: 90%; height: auto; }
     .youtube-banner { height: 200px; }
-    .alex-bro {
+    .alex-bro{
         flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+    .host{
+          flex-direction: column;
         align-items: center;
         gap: 15px;
         width: 100%;
