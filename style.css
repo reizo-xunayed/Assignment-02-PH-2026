@@ -538,7 +538,8 @@ body {
     }
     .about-contents p { font-size: 14px; }
     .stats {
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
         justify-content: center;
         gap: 15px;
         padding: 20px 15px;
