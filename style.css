@@ -523,6 +523,15 @@ body {
         height: auto;
         padding: 40px 15px;
     }
+    .circle-all {
+    width: 220px;
+    height: 220px;
+    margin-top: 55px;
+    }
+    .microphone{
+        width: 80px;
+        height: auto;
+    }
     .hero-text h1 { font-size: 32px; margin-bottom: 15px; }
     .hero-text p { font-size: 16px; margin-bottom: 20px; }
     .hero-buttons {
@@ -577,7 +586,7 @@ body {
         flex-direction: column;
         align-items: center;
         gap: 15px;
-        width: 100%;
+        width: 80%;
         height: auto;
         padding: 15px;
     }
@@ -585,19 +594,17 @@ body {
           flex-direction: column;
         align-items: center;
         gap: 15px;
-        width: 100%;
         height: auto;
-        padding: 15px;
     }
-    .div-alex-bio { justify-content: center; gap: 10px; }
+    .div-alex-bio { justify-content: center; gap: 10px;}
     .footer {
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center top;
-        width: 100%;
+        background-position: center;
+        width:auto;
         min-height: 300px;
         height: auto;
-        padding: 20px;
+        padding: 40px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -607,6 +614,7 @@ body {
         flex-direction:row;
         gap: 15px;
         margin-top: 15px;
+        opacity: 0.7;
     }
     .footer-copyrights { margin-top: 15px; opacity: 0.4; }
 }
